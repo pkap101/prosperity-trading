@@ -1,0 +1,19 @@
+# Python
+__pycache__/
+*.py[cod]
+*.pyo
+.Python
+env/
+venv/
+.venv/
+ 
+# Backtest logs
+logs/
+ 
+# macOS
+.DS_Store
+ 
+# IDE
+.vscode/
+.idea/
+ 
