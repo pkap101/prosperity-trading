@@ -26,19 +26,6 @@ prosperity-trading/
             └── ...
 ```
 
-## Each Round: Adding New Data
-
-1. Download the data capsule from the Prosperity dashboard
-2. Copy the CSVs into `backtester/prosperity3bt/resources/round{N}/`
-3. Add any new products and their position limits to `backtester/prosperity3bt/data.py`:
-   ```python
-   LIMITS = {
-       "EMERALDS": 80,
-       "TOMATOES": 80,
-       # add new products here
-   }
-   ```
-
 ## Running Backtests
 
 From the repo root, with your venv active:
@@ -61,6 +48,18 @@ prosperity3bt src/trader.py 0 --out logs/run.log
 prosperity3bt src/trader.py 0 --vis
 ```
 
-## Submitting
+## Other info
+Using fork of this backtester: https://github.com/jmerle/imc-prosperity-3-backtester/tree/master
 
-Upload `src/trader.py` directly to the Prosperity dashboard.
+This repo is very useful: https://github.com/MarkBrezina/Ctrl-Alt-DefeatTheMarket?tab=readme-ov-file
+We should use some code from this: https://github.com/TimoDiehm/imc-prosperity-3/blob/main/FrankfurtHedgehogs_polished.py
+
+
+On new rounds:
+- Download new data capsule → copy CSVs to backtester/prosperity3bt/resources/round{N}/
+- Add new products to LIMITS in data.py
+- Open notebooks/round{N}_analysis.ipynb, run the standard analysis (mid price over time, spread, autocorrelation, bot structure
+- Form a hypothesis about each new product's behavior
+- Implement strategy in src/trader.py, keeping previous round strategies intact
+- Backtest, iterate on params, check consistency across days
+- Submit → copy to strategies/ with timestamp and description
