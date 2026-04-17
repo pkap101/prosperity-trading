@@ -1,5 +1,3 @@
-# Prosperity Trading
-
 ## Setup
 # Create and activate virtual environment
 python3 -m venv .venv
@@ -7,23 +5,6 @@ source .venv/bin/activate
 
 # Install the backtester as a local editable package
 pip install -e backtester/
-```
-
-## Repo Structure
-
-```
-prosperity-trading/
-├── src/
-│   ├── datamodel.py          # IMC's official datamodel — do not edit
-│   └── trader.py             # Active submission file
-├── strategies/               # Saved strategy snapshots
-└── backtester/
-    └── prosperity3bt/
-        ├── data.py           # Add new products/limits here each round
-        └── resources/
-            ├── round0/       # Tutorial data (TOMATOES, EMERALDS)
-            ├── round1/       # Add CSVs here as rounds are released
-            └── ...
 ```
 
 ## Running Backtests
@@ -50,9 +31,7 @@ prosperity3bt src/trader.py 0 --vis
 
 ## Other info
 Using fork of this backtester: https://github.com/jmerle/imc-prosperity-3-backtester/tree/master
-
 This repo is very useful: https://github.com/MarkBrezina/Ctrl-Alt-DefeatTheMarket?tab=readme-ov-file
-We should use some code from this: https://github.com/TimoDiehm/imc-prosperity-3/blob/main/FrankfurtHedgehogs_polished.py
 
 
 On new rounds:

@@ -1,0 +1,17 @@
+trader,round,day,ASH_COATED_OSMIUM,INTARIAN_PEPPER_ROOT,total
+copy1-1,1,-2,18114,79649,97763
+copy1-1,1,-1,19816,79308,99124
+copy1-1,1,0,17305,79381,96686
+copy1-1,1,TOTAL,55235,238338,293573
+round1_hybrid_const_aggr,1,-2,18149,79649,97798
+round1_hybrid_const_aggr,1,-1,19420,79308,98728
+round1_hybrid_const_aggr,1,0,18205,79381,97586
+round1_hybrid_const_aggr,1,TOTAL,55774,238338,294112
+round1_hybrid_const_anchor90,1,-2,17906,79649,97556
+round1_hybrid_const_anchor90,1,-1,19135,79308,98443
+round1_hybrid_const_anchor90,1,0,17958,79381,97339
+round1_hybrid_const_anchor90,1,TOTAL,54999,238338,293338
+round1_hybrid_kalman_aggr,1,-2,18005,79649,97654
+round1_hybrid_kalman_aggr,1,-1,19285,79308,98593
+round1_hybrid_kalman_aggr,1,0,18161,79381,97542
+round1_hybrid_kalman_aggr,1,TOTAL,55451,238338,293789

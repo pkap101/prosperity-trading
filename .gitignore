@@ -16,4 +16,8 @@ logs/
 # IDE
 .vscode/
 .idea/
- 
+
+# Dated backtest artifacts
+backtests/*.log
+backtests/comparison/raw/*.log
+backtests/**/.DS_Store
