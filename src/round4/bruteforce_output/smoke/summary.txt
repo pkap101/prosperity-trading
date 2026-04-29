@@ -1,0 +1,14 @@
+Best portfolio found
+====================
+
+score: 0.0
+mean: 0.0
+median: 0.0
+std: 0.0
+score_std_100: 0.0
+p05: 0.0
+p01: 0.0
+worst: 0.0
+p_loss: 0.0
+
+Positions:
